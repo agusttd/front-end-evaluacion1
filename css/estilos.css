@@ -1,0 +1,72 @@
+/* Estilos a nivel de etiqueta */
+body {
+    font-family: 'Arial', sans-serif;
+    padding-top: 56px; /* Para compensar el navbar fijo */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 80vh; 
+    object-fit: contain; 
+    background-color: #f8f9fa; 
+  }
+
+/* En tu archivo CSS (estilos.css) */
+.bg-primary {
+    background-color: #680000 !important;
+  }
+
+  .btn-primary {
+    background-color: #680000;
+    border-color: #680000;
+  }
+  .btn-primary:hover {
+    background-color: #4d0000; /* 20% más oscuro para hover */
+    border-color: #4d0000;
+  }
+
+/* Estilos a nivel de clase */
+.section-title {
+    color: #2c3e50;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #680000;
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilos a nivel de ID */
+#nosotros {
+    background-color: #f8f9fa;
+}
+
+#contacto .card {
+    border: none;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 1.2rem;
+    }
+    
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+}
