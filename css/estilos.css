@@ -51,7 +51,10 @@ html {
     transition: transform 0.3s ease;
     scroll-margin-top: 80px
 }
-
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+  }
 .card:hover {
     transform: translateY(-5px);
 }
@@ -72,14 +75,7 @@ html {
 
 /* Media queries para responsividad */
 /* Reset específico para desktop */
-@media (min-width: 992px) {
-    #kinder, #basica, #media {
-      background-color: transparent !important;
-      border: 0 !important;
-      box-shadow: none !important;
-    }
-    
-  }
+
 @media (max-width: 768px) {
     .carousel-caption h5 {
         font-size: 1.2rem;
