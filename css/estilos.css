@@ -4,6 +4,10 @@ body {
     padding-top: 56px; /* Para compensar el navbar fijo */
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 .carousel-item img {
     width: 100%;
     height: 80vh; 
@@ -16,11 +20,11 @@ body {
     background-color: #680000 !important;
   }
 
-  .btn-primary {
+.btn-primary {
     background-color: #680000;
     border-color: #680000;
   }
-  .btn-primary:hover {
+.btn-primary:hover {
     background-color: #4d0000; 
     border-color: #4d0000;
   }
@@ -45,6 +49,7 @@ body {
 
 .card {
     transition: transform 0.3s ease;
+    scroll-margin-top: 80px
 }
 
 .card:hover {
@@ -66,6 +71,15 @@ body {
 }
 
 /* Media queries para responsividad */
+/* Reset específico para desktop */
+@media (min-width: 992px) {
+    #kinder, #basica, #media {
+      background-color: transparent !important;
+      border: 0 !important;
+      box-shadow: none !important;
+    }
+    
+  }
 @media (max-width: 768px) {
     .carousel-caption h5 {
         font-size: 1.2rem;
