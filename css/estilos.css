@@ -11,7 +11,7 @@ body {
     background-color: #f8f9fa; 
   }
 
-/* En tu archivo CSS (estilos.css) */
+
 .bg-primary {
     background-color: #680000 !important;
   }
@@ -21,7 +21,7 @@ body {
     border-color: #680000;
   }
   .btn-primary:hover {
-    background-color: #4d0000; /* 20% más oscuro para hover */
+    background-color: #4d0000; 
     border-color: #4d0000;
   }
 
@@ -50,6 +50,11 @@ body {
 .card:hover {
     transform: translateY(-5px);
 }
+
+.footer-granate {
+    background-color: #680000 !important;
+    color: white; 
+  }
 
 /* Estilos a nivel de ID */
 #nosotros {
